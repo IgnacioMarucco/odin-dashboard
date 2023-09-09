@@ -56,7 +56,7 @@ table {
   --default-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --main-font: 'Roboto';
 }
-h1,h2,h3 {
+h1,h2,h3,h6 {
   font-weight: bold;
 }
 h1 {
@@ -73,6 +73,7 @@ h3 {
 
 p {
   font-size: 1rem;
+  font-weight: 400;
 }
 
 a {
@@ -196,18 +197,19 @@ form input:focus {
 main {
   background-color: var(--dark-color);
   grid-area: main;
-
+  
   margin: 10px;
 
   display: grid;
   grid-template-columns: 1fr 500px;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 400px 1fr;
   grid-template-areas: 
   "cards announcements"
   "cards trending"
   ;
 }
 
+/* Projects */
 .projects {
   grid-area: cards;
 }
@@ -242,26 +244,49 @@ main h3 {
   align-self: end;
 }
 
-.announcements {
-  grid-area: announcements;
-}
-
-.trending {
-  grid-area: trending;
-}
-
-
+/* Announcements */
 article {
   background-color: var(--secondary-color);
 }
 
-.announcement--item {
+.announcements {
+  grid-area: announcements;
+}
+
+.container-announcements {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.announcement--item {
+  padding: 10px;
+}
+
+.announcement--title {
+  margin: 5px 0;
+}
+
+/* Trending */
+.trending {
+  grid-area: trending;
+}
+
+.container-trending {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.trending--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Buttons */
-
 button{
   color: #fff;
   background-color: var(--main-color);
@@ -269,9 +294,4 @@ button{
   border: 2px solid var(--main-color);
   border-radius: 50px;
   cursor: pointer;
-}
-
-button:hover{
-  /* transition : 500ms;
-  padding: 10px 50px; */
 }
