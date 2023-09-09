@@ -4,38 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
+
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <nav>
-    <h1>Dashboard</h1>
+    <h1 class="nav--title">Dashboard</h1>
     <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Profile</a></li>
-      <li><a href="">Messages</a></li>
-      <li><a href="">History</a></li>
-      <li><a href="">Tasks</a></li>
-      <li><a href="">Communities</a></li>
+      <li><a href=""><img class="svg--icon" src="./images/svg/home.svg" alt="">Home</a></li>
+      <li><a href=""><img class="svg--icon" src="./images/svg/account-details.svg" alt="">Profile</a></li>
+      <li><a href=""><img class="svg--icon" src="./images/svg/message.svg" alt="">Messages</a></li>
+      <li><a href=""><img class="svg--icon" src="./images/svg/history.svg" alt="">History</a></li>
+      <li><a href=""><img class="svg--icon" src="./images/svg/file-multiple.svg" alt="">Tasks</a></li>
+      <li><a href=""><img class="svg--icon" src="./images/svg/account-group.svg" alt="">Communities</a></li>
     </ul>
 
     <ul>
-      <li><a href="">Settings</a></li>
-      <li><a href="">Support</a></li>
-      <li><a href="">Privacy</a></li>
+      <li><a href=""><img class="svg--icon" src="./images/svg/cog.svg" alt="">Settings</a></li>
+      <li><a href=""><img class="svg--icon" src="./images/svg/face-agent.svg" alt="">Support</a></li>
+      <li><a href=""><img class="svg--icon" src="./images/svg/shield.svg" alt="">Privacy</a></li>
     </ul>
   </nav>
 
   <header>
-    <div class="search">
+    <div class="search-bar">
       <form action="./search/">
         <input type="search" name="" />
         <button type="submit">Search</button>
       </form>
-    </div>
 
-    <div class="profile">
-      <div class="notifications">Notifications</div>
-      <div class="avatar">Avatar</div>
-      <div class="nickname">Nickname</div>
+      <div class="profile">
+        <div class="notifications">Notifications</div>
+        <div class="avatar">Avatar</div>
+        <div class="nickname">Nickname</div>
+      </div>
     </div>
 
     <div class="control-panel">
@@ -53,36 +55,43 @@
   </header>
 
   <main>
-    <h3>Your Projects</h3>
-    <section class="container-cards">
-      <div class="card">
-        <div class="card--title"></div>
-        <div class="card--body"></div>
-        <div class="card--footer"></div>
-      </div>
-  
-      <div class="card">
-        <div class="card--title"></div>
-        <div class="card--body"></div>
-        <div class="card--footer"></div>
-      </div>
-  
-      <div class="card">
-        <div class="card--title"></div>
-        <div class="card--body"></div>
-        <div class="card--footer"></div>
-      </div>
-  
-      <div class="card">
-        <div class="card--title"></div>
-        <div class="card--body"></div>
-        <div class="card--footer"></div>
-      </div>
-  
-      <div class="card">
-        <div class="card--title"></div>
-        <div class="card--body"></div>
-        <div class="card--footer"></div>
+    <section class="projects">
+      <h3>Your Projects</h3>
+      <div class="container-cards">
+        <div class="card">
+          <div class="card--title">Project #1</div>
+          <div class="card--body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo quam modi fuga, 
+            repudiandae rem amet asperiores et perspiciatis, debitis neque consequuntur ea culpa cumque tempora labore.</div>
+          <div class="card--footer"><img class="svg--icon" src="images/svg/star-check.svg" alt=""> <img class="svg--icon"  src="images/svg/eye-plus.svg" alt=""> <img class="svg--icon"  src="images/svg/share-variant.svg" alt=""></div>
+        </div>
+    
+        <div class="card">
+          <div class="card--title">Project #2</div>
+          <div class="card--body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo quam modi fuga, 
+            repudiandae rem amet asperiores et perspiciatis, debitis neque consequuntur ea culpa cumque tempora labore.</div>
+          <div class="card--footer"><img class="svg--icon" src="images/svg/star-check.svg" alt=""> <img class="svg--icon"  src="images/svg/eye-plus.svg" alt=""> <img class="svg--icon"  src="images/svg/share-variant.svg" alt=""></div>
+        </div>
+    
+        <div class="card">
+          <div class="card--title">Project #3</div>
+          <div class="card--body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo quam modi fuga, 
+            repudiandae rem amet asperiores et perspiciatis, debitis neque consequuntur ea culpa cumque tempora labore.</div>
+          <div class="card--footer"><img class="svg--icon" src="images/svg/star-check.svg" alt=""> <img class="svg--icon"  src="images/svg/eye-plus.svg" alt=""> <img class="svg--icon"  src="images/svg/share-variant.svg" alt=""></div>
+        </div>
+    
+        <div class="card">
+          <div class="card--title">Project #4</div>
+          <div class="card--body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo quam modi fuga, 
+            repudiandae rem amet asperiores et perspiciatis, debitis neque consequuntur ea culpa cumque tempora labore.</div>
+          <div class="card--footer"><img class="svg--icon" src="images/svg/star-check.svg" alt=""> <img class="svg--icon"  src="images/svg/eye-plus.svg" alt=""> <img class="svg--icon"  src="images/svg/share-variant.svg" alt=""></div>
+        </div>
+    
+        <div class="card">
+          <div class="card--title">Project #5</div>
+          <div class="card--body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo quam modi fuga, 
+            repudiandae rem amet asperiores et perspiciatis, debitis neque consequuntur ea culpa cumque tempora labore.</div>
+          <div class="card--footer"><img class="svg--icon" src="images/svg/star-check.svg" alt=""> <img class="svg--icon"  src="images/svg/eye-plus.svg" alt=""> <img class="svg--icon"  src="images/svg/share-variant.svg" alt=""></div>
+        </div>
       </div>
     </section>
 
@@ -110,6 +119,16 @@
     </section>
 
     <section class="trending">
+      <article>
+        <div class="avatar">Avatar</div>
+        <div class="nickname">Nickname</div>
+        <p class="project-name">Project Name</p>
+      </article>
+      <article>
+        <div class="avatar">Avatar</div>
+        <div class="nickname">Nickname</div>
+        <p class="project-name">Project Name</p>
+      </article>
       <article>
         <div class="avatar">Avatar</div>
         <div class="nickname">Nickname</div>
