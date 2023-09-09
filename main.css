@@ -139,8 +139,32 @@ header {
   justify-content: space-between;
 }
 
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+form input {
+  border-radius: 10px;
+  padding: 5px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+.btn-search {
+  padding: 5px;
+}
+
 .profile {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
@@ -151,8 +175,17 @@ header {
   align-items: center;
 }
 
-.user-info {
+.welcome-message {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
@@ -217,6 +250,6 @@ button{
 }
 
 button:hover{
-  transition : 500ms;
-  padding: 10px 50px;
+  /* transition : 500ms;
+  padding: 10px 50px; */
 }
