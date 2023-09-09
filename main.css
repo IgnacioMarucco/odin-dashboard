@@ -57,24 +57,24 @@ table {
   --main-font: 'Roboto';
 }
 h1 {
-  font-size: 2.5rem;
-}
-h2 {
   font-size: 2rem;
 }
-h3 {
-  font-size: 1.8rem;
+
+h2 {
+  font-size: 1.5rem;
 }
+
+h3 {
+  font-size: 1.3rem;
+}
+
 p {
   font-size: 1rem;
 }
+
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.svg--icon {
-  height: 1.5rem;
 }
 
 .avatar {
@@ -99,9 +99,22 @@ body {
 nav {
   background-color: var(--main-color);
   grid-area: nav;
-  padding: 30px 50px;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+h1>.material-icons {
+  font-size: 2.5rem;
+}
+
+nav ul {
+  padding: 30px 50px;
+}
 /* HEADER */
 header {
   background-color: var(--secondary-color);
